@@ -1,0 +1,87 @@
+<html>
+
+<head>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/global.js"></script>
+
+    <title>
+        The Choice is Yours
+    </title>
+
+</head>
+
+<body>
+
+
+    <div class="heading">
+        <p>The Choice is Yours</p>
+    </div>
+
+    <section id="pills">
+
+        <div class="bluepill">
+
+            <a href="https://www.youtube.com/watch?v=w6K0iDsu0TM">
+                <img src="images/1.png"> </a>
+
+            <h2>Blue Pill</h2>
+
+
+        </div>
+
+        <div class="redpill">
+
+            <a href="https://www.youtube.com/watch?v=w6K0iDsu0TM">
+                <img src="images/3.png">
+            </a>
+            <h2 class="redtext">Red Pill</h2>
+
+        </div>
+
+    </section>
+
+
+
+    <script>
+        $("a[href='#top']").click(function() {
+            $("html, body").animate({
+                scrollTop: 0
+            }, 300);
+            return false;
+        });
+
+        const observerOptions = {
+            root: null,
+            rootMargin: "0px",
+            threshold: 0.7
+        };
+
+        function observerCallback(entries, observer) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // fade in observed elements that are in view
+                    entry.target.classList.replace('fadeOut', 'fadeIn');
+                }
+            });
+        }
+
+        const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+        const fadeElms = document.querySelectorAll('.fade');
+        fadeElms.forEach(el => observer.observe(el));
+    </script>
+
+</body>
+
+</html>
