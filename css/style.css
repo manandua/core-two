@@ -42,6 +42,11 @@ a:link {
 a:hover {
     text-decoration: line-through;
     font-weight: 900;
+    color: #02020B;
+}
+
+a:visited {
+    color: #02020B;
 }
 
 .line {
