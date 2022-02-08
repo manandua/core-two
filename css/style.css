@@ -7,7 +7,7 @@ body {
 .heading {
     color: #02020B;
     font-weight: 600;
-    font-size: 1.3vw;
+    font-size: 0.8vw;
 }
 
 .works {
@@ -36,7 +36,7 @@ a:link {
     color: #02020B;
     text-decoration: none;
     font-weight: 300;
-    font-size: 1.25vw;
+    font-size: 0.8vw;
 }
 
 a:hover {

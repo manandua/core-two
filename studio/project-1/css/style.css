@@ -1,6 +1,27 @@
 body {
-    background-color: #07020D;
     font-family: Oswald;
+    -webkit-animation: bgcolor 20s infinite;
+    animation: bgcolor 10s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+
+@keyframes bgcolor {
+    0% {
+        background-color: #759FBC
+    }
+    30% {
+        background-color: #A4243B
+    }
+    60% {
+        background-color: #02020B
+    }
+    90% {
+        background-color: #828C51
+    }
+    100% {
+        background-color: #E85F5C
+    }
 }
 
 .heading {
@@ -12,7 +33,7 @@ body {
     text-align: center;
 }
 
-#pills {
+#images {
     padding-top: 3%;
     display: flex;
     flex-direction: row;
@@ -21,128 +42,23 @@ body {
     align-items: center;
 }
 
-.redpill {
+.lefttext {
     color: #F7EDE2;
     font-weight: lighter;
 }
 
-.bluepill {
+.righttext {
     color: #F7EDE2;
+    font-weight: lighter;
 }
 
-#dua {
-    padding-left: 120px;
-    color: white;
-    text-decoration: none;
-}
-
-.other-stuff {
-    display: flex;
-    flex-direction: row;
-}
-
-.documentation {
-    margin: 5vw 120px 0 120px;
-}
-
-.fade {
-    transition: opacity 0.5s ease-in;
-}
-
-.fadeOut {
-    opacity: 0;
-}
-
-.fadeIn {
-    opacity: 1;
-}
-
-.other-stuff a {
+img {
     display: block;
-    color: white;
-    text-align: center;
-    padding: 0px 16px;
-    text-decoration: none;
-    padding-right: 120px;
+    margin: 0 auto;
+    transition: 0.3s;
+    width: 10vw;
 }
 
-.title {
-    display: block;
-    position: relative;
-}
-
-.title h1 {
-    font-family: Playfair Display;
-    color: white;
-    margin-bottom: 0;
-    padding-bottom: 0;
-    font-size: 5vw;
-}
-
-.title p {
-    font-weight: 300;
-    font-size: 24;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    padding: 0;
-    margin: 0;
-    color: white;
-}
-
-.divider {
-    margin-top: 25px;
-    height: 2px;
-    background-color: white;
-}
-
-.section {
-    margin: 55px 120px 0 120px;
-    display: block;
-}
-
-.section p {
-    color: white;
-    font-size: 1.01vw;
-    font-weight: 300;
-    line-height: 1.4;
-}
-
-.section img {
-    margin: auto;
-    width: 100%;
-    max-width: 1200px;
-    height: auto;
-    margin-top: 54px;
-    display: block;
-}
-
-.section video {
-    margin: auto;
-    width: 100%;
-    max-width: 1200px;
-    height: auto;
-    margin-top: 54px;
-    display: block;
-}
-
-.website-footer {
-    margin-top: 4vw;
-    margin-bottom: 4vw;
-    display: block;
-    height: 5vw;
-    background-color: #f1f1f1;
-}
-
-.website-footer a {
-    text-decoration: none;
-}
-
-.link-text {
-    font-family: Epilogue;
-    font-size: 1.25vw;
-    font-weight: 800;
-    color: #121212;
-    padding-top: 1.9vw;
-    text-align: center;
+#email {
+    width: 1000;
 }
