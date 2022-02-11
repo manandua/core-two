@@ -9,19 +9,19 @@ body {
 
 @keyframes bgcolor {
     0% {
-        background-color: #7189ff;
+        background-color: #e7eaff;
     }
     30% {
         background-color: white;
     }
     60% {
-        background-color: #7189ff;
+        background-color: #e7eaff;
     }
     90% {
         background-color: white;
     }
     100% {
-        background-color: #7189ff;
+        background-color: #e7eaff;
     }
 }
 
@@ -124,3 +124,12 @@ a:visited {
     width: 100%;
     height: 100%;
 }
+
+
+/* .project-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 60%;
+    width: 60%;
+} */
