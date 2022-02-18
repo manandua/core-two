@@ -38,7 +38,6 @@ h1 {
     font-family: 'IBM PlexSans Bold';
     font-size: 3rem;
     color: #705C68;
-    line-height: 0%;
 }
 
 h2 {
@@ -50,8 +49,14 @@ h2 {
 p.author {
     margin: 0;
     padding-top: 0;
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: #694B5E;
+}
+
+p.author::after {
+    color: #694B5E;
+    content: '\2192';
+    padding: 4px;
 }
 
 .content>p:first-of-type::first-letter {
@@ -63,6 +68,7 @@ p.author {
     border-color: #D67A66;
     margin: 0 0.2em 0 0;
     line-height: 0.85;
+    background-color: #F7E2DA;
 }
 
 h3 {
@@ -131,9 +137,16 @@ footer {
     text-decoration: none;
 }
 
+footer::after {
+    color: #694B5E;
+    content: '\2191';
+    padding: 4px;
+}
+
 a:link {
     text-decoration: underline grey 1px;
     background: -webkit-linear-gradient(#D47866, #694B5E);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-underline-offset: 3px;
 }
