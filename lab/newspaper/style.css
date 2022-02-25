@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,700;1,700&display=swap');
+body {
+    font-family: Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 1.4;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: white;
+    background-color: black;
+    text-align: justify;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.main-header {
+    background-color: black;
+    height: 300px;
+    color: black;
+    border-radius: 50px;
+    border-bottom: 1px solid #fff;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 7em;
+    padding-bottom: 1.7em;
+    line-height: 0.8;
+    letter-spacing: -0.05em;
+}
+
+img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.wrapper {
+    display: grid;
+    gap: 0.5em;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: minmax(500px, auto);
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 5%;
+    padding-bottom: 3em;
+    border-radius: 10px;
+}
+
+#sys {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+}
+
+.first {
+    grid-column: 1/4;
+    grid-row: 1;
+    padding: 1rem;
+    color: white;
+    background: linear-gradient(to right, rgb(119, 0, 255), purple);
+    border: 1px solid #fff;
+}
+
+.second {
+    grid-column: 4/6;
+    grid-row: 1;
+    padding: 1rem;
+    color: white;
+    background: linear-gradient(to right, rgb(119, 0, 255), purple);
+    border: 1px solid #fff;
+}
+
+.third {
+    grid-column: 1/3;
+    grid-row: 2;
+    padding: 1rem;
+    color: white;
+    background: linear-gradient(to right, rgb(119, 0, 255), purple);
+    border: 1px solid #fff;
+}
+
+.fourth {
+    grid-column: 3/5;
+    grid-row: 2;
+    padding: 1rem;
+    color: white;
+    background: linear-gradient(to right, rgb(119, 0, 255), purple);
+    border: 1px solid #fff;
+}
+
+.fifth {
+    grid-column: 5/6;
+    grid-row: 2/4;
+    padding: 1rem;
+    color: white;
+    background: linear-gradient(to right, rgb(119, 0, 255), purple);
+    border: 1px solid #fff;
+}
+
+.sixth {
+    grid-column: 1/5;
+    grid-row: 3;
+    padding: 1rem;
+    color: white;
+    background: linear-gradient(to right, rgb(119, 0, 255), purple);
+    border: 1px solid #fff;
+}
