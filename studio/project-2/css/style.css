@@ -1,0 +1,23 @@
+body {
+    background-color: #F7EDE2;
+    margin: 0;
+    padding: 0;
+}
+
+.parent {
+    background-color: rgb(58, 69, 224);
+    height: 70em;
+    width: 70em;
+}
+
+.child {
+    background-color: rgb(252, 109, 109);
+    height: 50%;
+    width: 50%;
+    transition: 0.5s ease-in-out;
+}
+
+.parent:hover .child {
+    background-color: green;
+    transform: translateX(100%);
+}

@@ -30,6 +30,56 @@ h1 {
     padding-bottom: 1.7em;
     line-height: 0.8;
     letter-spacing: -0.05em;
+    animation: fadeIn 1s;
+    -webkit-animation: fadeIn 1s;
+    -moz-animation: fadeIn 1s;
+    -o-animation: fadeIn 1s;
+    -ms-animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 img {
@@ -71,6 +121,11 @@ img {
     color: white;
     background: linear-gradient(to right, rgb(119, 0, 255), purple);
     border: 1px solid #fff;
+    animation: fadeIn 1.5s;
+    -webkit-animation: fadeIn 1.5s;
+    -moz-animation: fadeIn 1.5s;
+    -o-animation: fadeIn 1.5s;
+    -ms-animation: fadeIn 1.5s;
 }
 
 .second {
@@ -80,6 +135,11 @@ img {
     color: white;
     background: linear-gradient(to right, rgb(119, 0, 255), purple);
     border: 1px solid #fff;
+    animation: fadeIn 1.5s;
+    -webkit-animation: fadeIn 1.5s;
+    -moz-animation: fadeIn 1.5s;
+    -o-animation: fadeIn 1.5s;
+    -ms-animation: fadeIn 1.5s;
 }
 
 .third {
@@ -89,6 +149,11 @@ img {
     color: white;
     background: linear-gradient(to right, rgb(119, 0, 255), purple);
     border: 1px solid #fff;
+    animation: fadeIn 3s;
+    -webkit-animation: fadeIn 3s;
+    -moz-animation: fadeIn 3s;
+    -o-animation: fadeIn 3s;
+    -ms-animation: fadeIn 3s;
 }
 
 .fourth {
@@ -98,6 +163,11 @@ img {
     color: white;
     background: linear-gradient(to right, rgb(119, 0, 255), purple);
     border: 1px solid #fff;
+    animation: fadeIn 3s;
+    -webkit-animation: fadeIn 3s;
+    -moz-animation: fadeIn 3s;
+    -o-animation: fadeIn 3s;
+    -ms-animation: fadeIn 3s;
 }
 
 .fifth {
@@ -107,6 +177,11 @@ img {
     color: white;
     background: linear-gradient(to right, rgb(119, 0, 255), purple);
     border: 1px solid #fff;
+    animation: fadeIn 4s;
+    -webkit-animation: fadeIn 4s;
+    -moz-animation: fadeIn 4s;
+    -o-animation: fadeIn 4s;
+    -ms-animation: fadeIn 4s;
 }
 
 .sixth {
@@ -116,6 +191,11 @@ img {
     color: white;
     background: linear-gradient(to right, rgb(119, 0, 255), purple);
     border: 1px solid #fff;
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
 }
 
 @media (max-width: 400px) {
