@@ -21,6 +21,15 @@ body.light {
     background-color: rgb(240, 240, 240);
 }
 
+body.light label {
+    background-color: black;
+}
+
+body.light .c1 {
+    background-color: white;
+    color: black;
+}
+
 .main-header {
     background-color: black;
     height: 300px;
@@ -70,7 +79,6 @@ h1 {
     align-items: center;
     align-self: center;
     position: relative;
-    border: 1px solid #fff;
     animation: fadeIn 1.5s;
     -webkit-animation: fadeIn 1.5s;
     -moz-animation: fadeIn 1.5s;
