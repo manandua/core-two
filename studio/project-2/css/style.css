@@ -4,15 +4,10 @@
     margin: 0;
 }
 
-@media (min-width: 600px) {
-    body {
-        background: black;
-    }
-}
-
 body {
     background-color: #F7EDE2;
     margin: 0;
+    transition: background-color 0.4s ease;
     padding: 0;
     font-family: 'Merriweather', "Helvetica Neue", Helvetica, sans-serif;
     overflow-y: scroll;
@@ -22,8 +17,9 @@ body {
 .if-wrap {
     position: fixed;
     top: 50%;
-    left: 30.5%;
+    left: 26.5%;
     right: 0;
+    transition: left 0.5s ease;
     text-align: center;
     transform: translateY(-50%);
 }
@@ -40,6 +36,34 @@ body {
     display: block;
 }
 
+.first {
+    transition: all 0.4s ease;
+}
+
+.after-text {
+    position: fixed;
+    top: 70%;
+    left: 0;
+    letter-spacing: -0.25;
+    font-family: 'Merriweather';
+    right: 0;
+    z-index: -1;
+    font-size: 0.7em;
+    color: white;
+    text-align: center;
+}
+
+.after-text h1 {
+    margin: 0;
+    transition: opacity 0.4s ease;
+    font-weight: 300;
+    padding: 0;
+}
+
+.paper-closing {
+    transition: all 0.4s ease;
+}
+
 .fill {
     font-size: 2.1rem;
     -webkit-text-fill-color: #0f0f0f;
@@ -48,6 +72,10 @@ body {
 
 h1 {
     padding: 20px 0;
+}
+
+.hidden {
+    opacity: 0;
 }
 
 .pb {
@@ -89,9 +117,91 @@ canvas {
     opacity: 0;
 }
 
+.tb {
+    position: fixed;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 0;
+    letter-spacing: -0.25;
+    font-family: 'Merriweather';
+    right: 0;
+    transition: all 0.4s ease;
+    font-size: 0.9rem;
+    color: #0F0F0F;
+    text-align: center;
+}
+
+.tb-final {
+    font-size: 0.7rem;
+    top: 40%;
+    color: #F7EDE2;
+    transform: translate(-7%, -30%);
+}
+
+.tb h1 {
+    margin: 0;
+    font-weight: 300;
+    padding: 0;
+}
+
+.soo {
+    position: fixed;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 0;
+    letter-spacing: -0.25;
+    right: 0;
+    transition: all 0.4s ease;
+    font-size: 4.1rem;
+    color: #0F0F0F;
+    -webkit-text-fill-color: #0F0F0F;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #F7EDE2;
+    text-align: center;
+}
+
+.of {
+    position: fixed;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 0;
+    letter-spacing: -0.25;
+    right: 0;
+    transition: all 0.4s ease;
+    font-size: 1.5rem;
+    color: #F7EDE2;
+    text-align: center;
+}
+
+.end1 {
+    transition: opacity 0.4s ease;
+}
+
+.of h1 {
+    font-weight: 400;
+}
+
+.red.red-fill {
+    transform: translateY(-50%) scale(3);
+}
+
+.red {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transition: all 0.8s ease-out;
+    border-radius: 50%;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vw;
+    transform: translateY(-50%) scale(0);
+    background-color: #bc4749;
+}
+
 .paper-closing {
     height: 100%;
-    background: #0F0F0F;
     width: 100%;
     display: inline-block;
     overflow: hidden;
@@ -104,4 +214,58 @@ canvas {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+@font-face {
+    font-family: 'Moniqa Display';
+    src: url('../fonts/Moniqa-Display.woff2') format('woff2'), url('../fonts/Moniqa-Display.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.final {
+    position: fixed;
+    top: 29%;
+    white-space: nowrap;
+    font-size: 3.4rem;
+    font-family: 'Moniqa Display';
+}
+
+.final h1 {
+    font-weight: 300;
+}
+
+.final2 {
+    color: #F7EDE2;
+    top: 41%;
+}
+
+.hide {
+    display: none;
+}
+
+footer {
+    position: fixed;
+    bottom: -300px;
+    padding: 20px 0;
+    opacity: 0;
+    left: 0;
+    transition: all 1s ease;
+    background-color: #F7EDE2;
+    font-family: 'Merriweather', Helvetica, sans-serif;
+    right: 0;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.footer-vis {
+    opacity: 1;
+    bottom: 0;
+}
+
+footer a {
+    text-decoration: none;
+    font-weight: 400;
+    color: #bc4749;
 }
