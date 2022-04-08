@@ -51,60 +51,60 @@ function scroll() {
         sm.classList.add('pb-visible')
 
     } else if (n == 3) {
-        
-            document.querySelector('.first').classList.add('invisible')
-    
+
+        document.querySelector('.first').classList.add('invisible')
+
 
         setTimeout(() => {
             let i = 0;
             let myInteval = setInterval(() => {
-                if(i==10)
-                document.body.style.backgroundColor="#0f0f0f"
+                if (i == 10)
+                    document.body.style.backgroundColor = "#0f0f0f"
                 document.querySelector('.img-holder').style.backgroundImage = "url('" + ball[i++] + "')"
             }, 42);
             setTimeout(() => {
                 clearInterval(myInteval)
-          
+
             }, 4998);
         }, 1000);
 
-    }else if(n==4){
+    } else if (n == 4) {
         document.querySelector(".tw").classList.remove("hidden");
         setTimeout(() => {
             document.querySelector(".tw-1").classList.remove("hidden");
 
         }, 800);
-    }else if(n==5){
-    
-            let i = 117;
-            let myInteval = setInterval(() => {
-                if(i==10)
-               { document.body.style.backgroundColor="#F7EDE2"
+    } else if (n == 5) {
+
+        let i = 117;
+        let myInteval = setInterval(() => {
+            if (i == 10) {
+                document.body.style.backgroundColor = "#F7EDE2"
                 document.querySelector('.after-text').classList.add('hidden')
             }
-                document.querySelector('.img-holder').style.backgroundImage = "url('" + ball[i--] + "')"
-            }, 42);
-            setTimeout(() => {
+            document.querySelector('.img-holder').style.backgroundImage = "url('" + ball[i--] + "')"
+        }, 42);
+        setTimeout(() => {
 
-                clearInterval(myInteval)
-                document.querySelector(".paper-closing").classList.add("invisible");
-                document.querySelector(".tb").classList.remove("hidden")
-            }, 4956);
-        
-    } else if(n==6){
-        document.body.style.backgroundColor="#0F0F0F"
+            clearInterval(myInteval)
+            document.querySelector(".paper-closing").classList.add("invisible");
+            document.querySelector(".tb").classList.remove("hidden")
+        }, 4956);
+
+    } else if (n == 6) {
+        document.body.style.backgroundColor = "#0F0F0F"
         document.querySelector('.tb').classList.add('tb-final');
         setTimeout(() => {
             setTimeout(() => {
                 document.querySelector('.soo').classList.remove('invisible')
             }, 500);
         }, 600);
-    } else if(n==7){
+    } else if (n == 7) {
         document.querySelector('.end1').classList.add('invisible');
         setTimeout(() => {
             document.querySelector('.of').classList.remove('invisible');
         }, 500);
-    }else if(n==8){
+    } else if (n == 8) {
         document.querySelector('.red').classList.add('red-fill')
         setTimeout(() => {
             setTimeout(() => {
@@ -117,7 +117,7 @@ function scroll() {
         <marquee  class="final final2" direction="right">
             <h1>it <span style="color: #0f0f0f;">kills</span> them &nbsp; &nbsp; &nbsp;it <span style="color: #0f0f0f;">kills</span> them &nbsp; &nbsp; &nbsp;it <span style="color: #0f0f0f;">kills</span> them &nbsp; &nbsp; &nbsp;it <span style="color: #0f0f0f;">kills</span> them &nbsp; &nbsp; &nbsp;it <span style="color: #0f0f0f;">kills</span> them &nbsp; &nbsp; &nbsp;it <span style="color: #0f0f0f;">kills</span> them &nbsp; &nbsp; &nbsp;it <span style="color: #0f0f0f;">kills</span> them &nbsp; &nbsp; &nbsp;it <span style="color: #0f0f0f;">kills</span> them &nbsp; &nbsp; &nbsp;it <span style="color: #0f0f0f;">kills</span> them &nbsp; &nbsp; &nbsp;it <span style="color: #0f0f0f;">kills</span> them  &nbsp; &nbsp; &nbsp;it <span style="color: #0f0f0f;">kills</span> them  &nbsp; &nbsp; &nbsp;it <span style="color: #0f0f0f;">kills</span> them  &nbsp; &nbsp; &nbsp;it <span style="color: #0f0f0f;">kills</span> them  &nbsp; &nbsp; &nbsp;it <span style="color: #0f0f0f;">kills</span> them  &nbsp; &nbsp; &nbsp;it <span style="color: #0f0f0f;">kills</span> them  &nbsp; &nbsp; &nbsp;it <span style="color: #0f0f0f;">kills</span> them  &nbsp; &nbsp; &nbsp;it <span style="color: #0f0f0f;">kills</span> them  &nbsp; &nbsp; &nbsp;it <span style="color: #0f0f0f;">kills</span> them  &nbsp; &nbsp; &nbsp;it <span style="color: #0f0f0f;">kills</span> them  &nbsp; &nbsp; &nbsp;it <span style="color: #0f0f0f;">kills</span> them  &nbsp; &nbsp; &nbsp;it <span style="color: #0f0f0f;">kills</span> them  &nbsp; &nbsp; &nbsp;it <span style="color: #0f0f0f;">kills</span> them  &nbsp; &nbsp; &nbsp;it <span style="color: #0f0f0f;">kills</span> them  &nbsp; &nbsp; &nbsp;it <span style="color: #0f0f0f;">kills</span> them  &nbsp; &nbsp; &nbsp;it <span style="color: #0f0f0f;">kills</span> them </h1>
         </marquee>`;
-        document.body.innerHTML+=html;
+            document.body.innerHTML += html;
 
         }, 700);
     }
