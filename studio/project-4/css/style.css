@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+body {
+    font-family: Akshar, sans-serif;
+    line-height: 1.4;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: white;
+    overscroll-behavior: none;
+    background-color: #FFE16E;
+    text-align: justify;
+    transition: background-color 0.5s ease;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#navbar {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    left: 0;
+    right: 0;
+    background-color: black;
+    font-size: 1.4em;
+    font-weight: 400;
+}
+
+#navbar a {
+    float: left;
+    display: block;
+    text-align: center;
+    padding-top: 5px;
+    padding-left: 30px;
+    padding-bottom: 5px;
+    text-decoration: none;
+}
+
+.gen {
+    background-color: #C4F3FF;
+    padding-right: 30px;
+    color: black;
+}
+
+#taskbar {
+    background-color: #FFE16E;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    float: center;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+#taskbar a {
+    font-size: 1.4em;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: black;
+    align-items: center;
+}
+
+.significance {
+    float: left;
+}
+
+.dropbtn {
+    font-size: 1.4em;
+    border: none;
+    min-width: 200px;
+    outline: none;
+    color: black;
+    padding: 1em;
+    background-color: inherit;
+    font-family: inherit;
+    /* Important for vertical align on mobile phones */
+    margin: 0;
+    /* Important for vertical align on mobile phones */
+}
+
+.dropdown-content {
+    position: absolute;
+    background-color: #fadb5e;
+    z-index: 999;
+    display: flex;
+    right: 0;
+    left: 0;
+    flex-direction: column;
+    bottom: 70;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.filt:hover .dropdown-content {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/* .dropdown-content a:hover {
+    background-color: #ddd;
+} */
+
+.filt {
+    position: relative;
+}
+
+
+/* 
+.navbar a:hover,
+.significance:hover .dropbtn {
+    background-color: white;
+    opacity: 50%;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+} */
+
+.search {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-col {
+    font-weight: 400;
+    font-size: 8em;
+    color: rgb(15, 15, 15);
+}
+
+.bar {
+    height: 5%;
+    width: 40%;
+    max-width: 700px;
+    background: #f1f1f1;
+    display: flex;
+    flex-direction: row;
+    border-radius: 60px;
+    margin-bottom: 3em;
+    padding: 0.5em;
+    align-items: center;
+}
+
+.typing {
+    width: 34ch;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 1.5em;
+    padding-left: 1.2em;
+    color: black;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
+
+::placeholder {
+    color: ;
+}
+
+.search-button {
+    padding-right: 1em;
+    padding-left: 39em;
+    position: absolute;
+}
+
+.search-button img {
+    position: relative;
+    height: 30px;
+    width: 30px;
+}
+
+.holy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 200px;
+}
+
+.meme {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 70%;
+    margin: 200px 0;
+    margin-bottom: 100px;
+    align-items: center;
+}
+
+.meme h1 {
+    position: absolute;
+    top: -6vw;
+    letter-spacing: 0.6;
+    left: 50%;
+    white-space: nowrap;
+    transform: translateX(-50%);
+    font-weight: 400;
+    color: #f1f1f1;
+    text-shadow: 2px 2px black;
+    font-size: 8vw;
+}
+
+.meme .img {
+    width: 75%;
+    height: 35vw;
+    position: relative;
+    border-radius: 8px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+    background-color: white;
+}
+
+.meme .data {
+    align-self: flex-end;
+    margin-bottom: 70px;
+    color: black;
+    margin-left: 50px;
+    width: 30%;
+}
+
+.meme .data h2 {
+    font-weight: 5 00;
+    font-size: 1.8em;
+    padding-bottom: 0.2em;
+    color: #f1f1f1;
+}
+
+.meme .data .filters {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 30px;
+    justify-content: flex-start;
+}
+
+.meme .data p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.1;
+    font-size: 1.2em;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    /* number of lines to show */
+    line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+.desc-expand {
+    -webkit-line-clamp: unset!important;
+    /* number of lines to show */
+    line-clamp: unset!important;
+}
+
+.meme .data .filter {
+    background-color: white;
+    border-radius: 20px;
+    margin-right: 10px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    user-select: none;
+    padding: 1px 20px;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    font-size: 0.8em;
+}
+
+.meme .data .filter:hover {
+    transform: scale(1.05);
+}
+
+.meme .view-more {
+    text-decoration: underline;
+    color: #f1f1f1;
+    margin-top: 2px;
+    user-select: none;
+    cursor: pointer;
+    padding-top: 0.8em;
+}
