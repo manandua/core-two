@@ -9,6 +9,10 @@ body {
     background-color: #FFE16E;
     text-align: justify;
     transition: background-color 0.5s ease;
+    /* background-image: url("/images/back.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; */
 }
 
 * {
@@ -24,7 +28,7 @@ body {
     left: 0;
     right: 0;
     background-color: black;
-    font-size: 1.4em;
+    font-size: 1.1em;
     font-weight: 400;
 }
 
@@ -47,6 +51,7 @@ body {
 #taskbar {
     background-color: #FFE16E;
     position: fixed;
+    display: none;
     bottom: 0;
     width: 100%;
     display: flex;
@@ -63,6 +68,14 @@ body {
     text-decoration: none;
     color: black;
     align-items: center;
+}
+
+.hide {
+    opacity: 0;
+}
+
+.show {
+    opacity: 1;
 }
 
 .significance {
@@ -111,17 +124,9 @@ body {
     position: relative;
 }
 
-
-/* 
-.navbar a:hover,
-.significance:hover .dropbtn {
-    background-color: white;
-    opacity: 50%;
+.filt a {
+    cursor: pointer;
 }
-
-.dropdown:hover .dropdown-content {
-    display: block;
-} */
 
 .search {
     width: 100%;
@@ -130,6 +135,10 @@ body {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+}
+
+.taskbar {
+    position: relative;
 }
 
 .title-col {
@@ -143,12 +152,171 @@ body {
     width: 40%;
     max-width: 700px;
     background: #f1f1f1;
+    position: relative;
     display: flex;
     flex-direction: row;
     border-radius: 60px;
     margin-bottom: 3em;
     padding: 0.5em;
     align-items: center;
+}
+
+.bar:hover {
+    cursor: not-allowed
+}
+
+.dog-btn {
+    position: relative;
+}
+
+.dog-btn:hover {
+    cursor: pointer;
+}
+
+.dog-btn img {
+    transform: translateY(-8%);
+}
+
+.dog-move img {
+    animation: dog-anim 240ms ease-in infinite alternate-reverse;
+}
+
+@keyframes dog-anim {
+    from {
+        transform: translateY(-6%);
+    }
+    to {
+        transform: translateY(-26%);
+    }
+}
+
+@keyframes left-msg-anim {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.message-list {
+    color: black;
+    overscroll-behavior: contain;
+    display: flex;
+    font-family: sans-serif;
+    flex-direction: column;
+    padding: 15px 0;
+    font-size: 1.2em;
+    width: 100%;
+    font-weight: 300;
+    max-height: 100%;
+    overflow: scroll;
+}
+
+.msgbox {
+    margin-top: 0.3em;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+}
+
+.msgbox.left .txt {
+    align-self: flex-start;
+    align-items: flex-end;
+    animation: left-msg-anim 0.2s ease;
+    transform-origin: bottom left;
+    display: flex;
+}
+
+.msgbox.right {
+    align-self: flex-end;
+    width: inherit;
+    display: flex;
+    margin-right: 0.8em;
+    justify-content: flex-end;
+}
+
+.msgbox.msgbox.right .txt {
+    animation: left-msg-anim 0.2s ease;
+    transform-origin: bottom right;
+    background-color: #f1f1f1;
+}
+
+.msgbox .txt {
+    border: 1px black solid;
+    padding: 0.3em;
+    padding-right: 1.5em;
+    width: fit-content;
+    background-color: #fadb5e;
+    margin-top: 0.5em;
+    padding-left: 0.5em;
+    text-align: start;
+    border-radius: 1px;
+}
+
+.txt-wrap {
+    max-width: 66%;
+}
+
+.msgbox.left::before {
+    content: "";
+    margin-bottom: 0;
+    background-size: contain;
+    margin-left: 10px;
+    margin-right: 5px;
+    background-repeat: no-repeat;
+    background-image: url("/images/doge.png");
+    width: 40px;
+    height: 40px;
+}
+
+.chatbox .input-box {
+    min-height: 40px;
+    height: fit-content;
+    width: 100%;
+    font-family: sans-serif;
+    display: flex;
+    padding: 10px 0;
+    flex-wrap: wrap;
+    font-size: 1.2em;
+    color: black;
+    border-top: 1px black solid;
+}
+
+.user-txt {
+    border: 1px black solid;
+    border-radius: 30px;
+    height: fit-content;
+    cursor: pointer;
+    width: fit-content;
+    margin: 0 7px;
+    padding: 5px 10px;
+}
+
+.user-txt:hover {
+    transform: scale(1.05);
+}
+
+.chatbox {
+    position: absolute;
+    border: 6px black solid;
+    bottom: 3.7em;
+    width: 400px;
+    left: 50%;
+    transform: translateX(-50%);
+    visibility: hidden;
+    transform-origin: bottom;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: flex-end;
+    display: flex;
+    height: 450px;
+    right: 0;
+    background-color: white;
+}
+
+.chatbox.visible {
+    visibility: visible;
 }
 
 .typing {
@@ -175,14 +343,10 @@ body {
     }
 }
 
-::placeholder {
-    color: ;
-}
-
 .search-button {
-    padding-right: 1em;
-    padding-left: 39em;
+    padding-right: 1.3em;
     position: absolute;
+    right: 0;
 }
 
 .search-button img {
@@ -299,4 +463,8 @@ body {
     user-select: none;
     cursor: pointer;
     padding-top: 0.8em;
+}
+
+.chatbox::-webkit-scrollbar {
+    display: none;
 }

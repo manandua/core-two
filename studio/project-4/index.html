@@ -8,8 +8,12 @@
 
     <link rel="stylesheet" href="css/style.css">
     <title>
-        inclass
+        Things that Changed the Internet
     </title>
+
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 
@@ -30,14 +34,36 @@
 
     </div>
 
-    <div id="taskbar">
-        <a href=""> <img src="images/doge.png"></a>
+    <div id="taskbar" class="bottomMenu hide">
+
+        <div class="dog-btn dog-move">
+            <div class="chatbox" id="chatbox">
+                <div class="message-list">
+                    <!-- <div class="msgbox left">
+                       <div class="txt-wrap">
+                        <div class="txt">hey human.</div>
+                       </div>
+                    </div> -->
+                    <!-- <div class="msgbox right">
+                        <div class="txt-wrap">
+                         <div class="txt">hey human.</div>
+                         <div class="txt">hey human.</div>
+                         <div class="txt">hey human.</div>
+                        </div>
+                     </div> -->
+                </div>
+                <div class="input-box">
+
+                </div>
+            </div>
+            <img src="images/doge.png">
+        </div>
 
         <div class="significance filt">
             <button class="dropbtn">SIGNIFICANCE
                 <i class="fa fas fa-caret-down"></i>
             </button>
-            <div class="dropdown-content">
+            <div class="dropdown-content" data-tag="Significance">
                 <a>Holy Grail</a>
                 <a>Nostalgic</a>
                 <a>Cancel Culture</a>
@@ -48,16 +74,16 @@
             <button class="dropbtn">CONTEXT
                 <i class="fa fas fa-caret-down"></i>
             </button>
-            <div class="dropdown-content">
-                <a href="">Pop Culture</a>
-                <a href="">Character</a>
-                <a href="">Real</a>
-                <a href="">Event Related</a>
-                <a href="">Tech</a>
-                <a href="">Dark</a>
-                <a href="">Gaming</a>
-                <a href="">YouTube</a>
-                <a href="">Reddit</a>
+            <div class="dropdown-content" data-tag="Context">
+                <a>Pop Culture</a>
+                <a>Character</a>
+                <a>Real</a>
+                <a>Event Related</a>
+                <a>Tech</a>
+                <a>Dark</a>
+                <a>Gaming</a>
+                <a>YouTube</a>
+                <a>Reddit</a>
             </div>
         </div>
 
@@ -65,14 +91,14 @@
             <button class="dropbtn">QUALITY
                 <i class="fa fas fa-caret-down"></i>
             </button>
-            <div class="dropdown-content">
-                <a href="">S-Tier</a>
-                <a href="">A-Tier</a>
-                <a href="">B-Tier</a>
-                <a href="">C-Tier</a>
-                <a href="">D-Tier</a>
-                <a href="">E-Tier</a>
-                <a href="">F-Tier</a>
+            <div class="dropdown-content" data-tag="Quality">
+                <a>S-Tier</a>
+                <a>A-Tier</a>
+                <a>B-Tier</a>
+                <a>C-Tier</a>
+                <a>D-Tier</a>
+                <a>E-Tier</a>
+                <a>F-Tier</a>
             </div>
         </div>
 
@@ -80,12 +106,11 @@
             <button class="dropbtn">YEAR
                 <i class="fa fas fa-caret-down"></i>
             </button>
-            <div class="dropdown-content">
-                <a href="">2000-2005</a>
-                <a href="">2005-2010</a>
-                <a href="">2010-2015</a>
-                <a href="">2015-2020</a>
-                <a href="">Omnipresent</a>
+            <div class="dropdown-content" data-tag="Period">
+                <a>2000-2005</a>
+                <a>2005-2010</a>
+                <a>2010-2015</a>
+                <a>2015-2020</a>
             </div>
         </div>
 
