@@ -70,7 +70,7 @@ document.querySelectorAll(".filt a").forEach((tag) => {
 
 fetch('https://api.airtable.com/v0/appPVOewRDaRNxdNx/Items', {
         headers: {
-            Authorization: 'Bearer key66O0pxxsuOZNb6',
+            Authorization: 'Bearer patkUei9Cneto3rtn.e8caf3d133a2ebd8212878b83271342e36b7f4422922476a86670df01c73e5f4',
 
         },
     })
